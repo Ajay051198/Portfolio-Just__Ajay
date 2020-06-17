@@ -1,0 +1,15 @@
+#a {grid-area: a}
+#b {grid-area: b}
+#c {grid-area: c}
+#d {grid-area: d}
+#e {grid-area: e}
+
+#grid {
+	display: grid;
+	grid-column-gap: 1rem;
+	grid-template-areas:
+			"a a b b"
+			"c c c c"
+			"d d d d"
+			"e e e e";
+}
