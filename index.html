@@ -33,6 +33,12 @@
 				font-weight: normal;
 				font-style: normal;
 			}
+			@font-face {
+				font-family: Code;
+				src: url("assets/fonts/Code.ttf") format("truetype");
+				font-weight: normal;
+				font-style: normal;
+			}
 			#space {
 				background: white url("assets/images/bg.jpg") center / cover;
 				background-attachment: fixed;
@@ -48,7 +54,7 @@
 				background-attachment: fixed;
 			}
 			
-			#sec1 {
+			#projects {
 				background: white url("assets/images/who_bg.jpeg") center / cover;
 				background-attachment: fixed;
 			}
@@ -125,13 +131,19 @@
 			</div>
 		</section>
 		
-		<section class="section has-backgroud-black" id="skill-set">
+		<section class="section has-backgroud-black" id="skill-set" style="padding-top: 28px;">
 			<div class="container">
-				<h1 class="title has-text-centered has-text-white is-size-2">SKILL SET</h1>
+				<h1 class="title has-text-centered has-text-white is-size-2" style="font-family: Code">MY SKILL SET</h1>
+				<div class="notification is-light" style="width=100%; opacity: .9;">
+					<div class="columns" style="font-size: 1.1rem;">
+						<div class="column center"><div><i class="fas fa-cogs" aria-hidden="true"></i> -- In Practice</div></div>
+						<div class="column center"><div><i class="fas fa-hourglass" aria-hidden="true"></i> -- Have previous worked with</div></div>
+						<div class="column center"><div><i class="fas fa-map" aria-hidden="true"></i> -- Have plans to learn</div></div>
+					</div>
+				</div>
 				<div class="columns is-multiline">
-
 					<div class="column is-one-third">
-						<div class="box">
+						<div class="box" style="opacity: 0.85;">
 							<article class="media">
 								<div class="media-left">
 									<figure class="image is-64x64">
@@ -141,10 +153,10 @@
 								<div class="media-content">
 									<div class="content">
 										<p>
-											<strong>Programming Languages</strong> <small>@preferred-language</small> <small>(2+years)</small>
+											<strong>Programming Languages</strong><small> (6+ years coding)</small>
 											<br>
 											<ul>
-												<li style="width: 100%">Python <div class="center" style="width: 15%; float: right"><i class="fas fa-cogs" aria-hidden="true"></i></div></li>
+												<li style="width: 100%">Python<div class="center" style="width: 15%; float: right"><i class="fas fa-cogs" aria-hidden="true"></i></div></li>
 												<li style="width: 100%">C++ <div class="center" style="width: 15%; float: right"><i class="fas fa-hourglass" aria-hidden="true"></i></div></li>
 												<li style="width: 100%">C <div class="center" style="width: 15%; float: right"><i class="fas fa-hourglass" aria-hidden="true"></i></div></li>
 												<li style="width: 100%">Git <div class="center" style="width: 15%; float: right"><i class="fas fa-cogs" aria-hidden="true"></i></div></li>
@@ -153,16 +165,15 @@
 												<li style="width: 100%">Ardrino IDE <div class="center" style="width: 15%; float: right"><i class="fas fa-hourglass" aria-hidden="true"></i></div></li>
 												<li style="width: 100%">MSP430, PIC <div class="center" style="width: 15%; float: right"><i class="fas fa-hourglass" aria-hidden="true"></i></div></li>
 												<li style="width: 100%">SQL <div class="center" style="width: 15%; float: right"><i class="fas fa-hourglass" aria-hidden="true"></i></div></li>
-											</ul>					
+											</ul>
 										</p>
 									</div>
 								</div>
 							</article>
 						</div>
 					</div>
-
-					<div class="column is-one-third">
-						<div class="box">
+					<div class="column is-one-third" style="height: 100%;">
+						<div class="box" style="opacity: 0.85;">
 							<article class="media">
 								<div class="media-left">
 									<figure class="image is-64x64">
@@ -172,23 +183,22 @@
 								<div class="media-content">
 									<div class="content">
 										<p>
-											<strong>Web Development</strong> <small>@preferred-language</small> <small>(2+years)</small>
+											<strong>Web Development</strong> <small>(Learning since Feb 2020)</small>
 											<br>
 											<ul>
 												<li style="width: 100%">Django @Framework<div class="center" style="width: 15%; float: right"><i class="fas fa-cogs" aria-hidden="true"></i></div></li>
 												<li style="width: 100%">HTML 2 @frontend<div class="center" style="width: 15%; float: right"><i class="fas fa-cogs" aria-hidden="true"></i></div></li>
 												<li style="width: 100%">CSS @frontend<div class="center" style="width: 15%; float: right"><i class="fas fa-cogs" aria-hidden="true"></i></div></li>
-												<li style="width: 100%">Bulma, Materialize, Bootstrap @frontend API<div class="center" style="width: 15%; float: right"><i class="fas fa-cogs" aria-hidden="true"></i></div></li>									
-											</ul>					
+												<li style="width: 100%">Bulma, Materialize, Bootstrap @frontend API<div class="center" style="width: 15%; float: right"><i class="fas fa-cogs" aria-hidden="true"></i></div></li>
+											</ul>
 										</p>
 									</div>
 								</div>
 							</article>
 						</div>
 					</div>
-
 					<div class="column is-one-third">
-						<div class="box">
+						<div class="box" style="opacity: 0.85;">
 							<article class="media">
 								<div class="media-left">
 									<figure class="image is-64x64">
@@ -198,7 +208,7 @@
 								<div class="media-content">
 									<div class="content">
 										<p>
-											<strong>Misc Softwares and Soft skills</strong> <small>@preferred-language</small> <small>(2+years)</small>
+											<strong>Misc Softwares and Soft skills</strong><small> (~5 yrs exp)</small>
 											<br>
 											<ul>
 												<li style="width: 100%">Microsoft Office<div class="center" style="width: 15%; float: right"><i class="fas fa-cogs" aria-hidden="true"></i></div></li>
@@ -212,18 +222,15 @@
 												<li style="width: 100%">Technical Communication<div class="center" style="width: 15%; float: right"><i class="fas fa-hourglass" aria-hidden="true"></i></div></li>
 												<li style="width: 100%">Leadership<div class="center" style="width: 15%; float: right"><i class="fas fa-hourglass" aria-hidden="true"></i></div></li>
 												
-											</ul>					
+											</ul>
 										</p>
 									</div>
 								</div>
 							</article>
 						</div>
 					</div>
-
-
-
 					<div class="column is-half">
-						<div class="box">
+						<div class="box" style="opacity: 0.85;">
 							<article class="media">
 								<div class="media-left">
 									<figure class="image is-64x64">
@@ -233,7 +240,7 @@
 								<div class="media-content">
 									<div class="content">
 										<p>
-											<strong>Data Science and Machine Learning</strong> <small>@preferred-language</small> <small>(2+years)</small>
+											<strong>Data Science and Machine Learning</strong><small> (Learning since Nov 2019)</small>
 											<br>
 											<ul>
 												<li style="width: 100%">Numpy @scientific computing library<div class="center" style="width: 15%; float: right"><i class="fas fa-cogs" aria-hidden="true"></i></div></li>
@@ -242,15 +249,14 @@
 												<li style="width: 100%">Sklearn @machine learning models library<div class="center" style="width: 15%; float: right"><i class="fas fa-cogs" aria-hidden="true"></i></div></li>
 												<li style="width: 100%">XGBoost @Gradient Boosting models library<div class="center" style="width: 15%; float: right"><i class="fas fa-cogs" aria-hidden="true"></i></div></li>
 												
-											</ul>					
+											</ul>
 										</p>
 									</div>
 								</div>
 							</article>
 						</div>
 					</div>
-
-					<div class="column is-half">
+					<div class="column is-half" style="opacity: 0.85;">
 						<div class="box">
 							<article class="media">
 								<div class="media-left">
@@ -261,7 +267,7 @@
 								<div class="media-content">
 									<div class="content">
 										<p>
-											<strong>Deep Learning</strong> <small>@preferred-language</small> <small>(2+years)</small>
+											<strong>Deep Learning</strong><small> (Learning since Jan 2020)</small>
 											<br>
 											<ul>
 												<li style="width: 100%">Pytorch @API<div class="center" style="width: 15%; float: right"><i class="fas fa-cogs" aria-hidden="true"></i></div></li>
@@ -270,21 +276,20 @@
 												<li style="width: 100%">Computer Vision @concept<div class="center" style="width: 15%; float: right"><i class="fas fa-cogs" aria-hidden="true"></i></div></li>
 												<li style="width: 100%">NLP @concept<div class="center" style="width: 15%; float: right"><i class="fas fa-map" aria-hidden="true"></i></div></li>
 												
-											</ul>					
+											</ul>
 										</p>
 									</div>
 								</div>
 							</article>
 						</div>
 					</div>
-
-					
 				</div>
 			</div>
 			
 		</section>
-		<section class="section has-background-black" id="sec1">
+		<section class="section has-background-black" id="projects">
 			<div class="container">
+				<h1 class="title has-text-centered has-text-white is-size-2" style="font-family: Code">MY PROJECTS</h1>
 				<div class="columns">
 					<div class="column is-one-third">
 						<div style="height: 250px; overflow: hidden; border-radius: 15px;">
