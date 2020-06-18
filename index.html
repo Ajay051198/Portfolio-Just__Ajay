@@ -124,6 +124,14 @@
 				text-align: justify;
 				text-transform:
 			}
+			.card {
+				height: 500px;
+			}
+			.card:hover {
+				transform: scale(1.1);
+				transition-duration: 0.6s;
+				box-shadow: 5px 10px rgba(0,0,0,0.3);
+			}
 		</style>
 		
 	</head>
@@ -342,42 +350,131 @@
 		</section>
 		<section class="section has-background-black" id="projects">
 			<div class="container">
-				<h1 class="title has-text-centered has-text-white is-size-2" style="font-family: Code">MY PROJECTS</h1>
-				<div class="columns">
+				<div class="columns is-multiline is-variable is-8">
 					<div class="column is-one-third">
-						<div style="height: 250px; overflow: hidden; border-radius: 15px;">
-							<figure class="image">
-								<img src="/assets/images/about-me.jpg">
-							</figure>
+						<div class="card">
+							<div class="card-image">
+								<figure class="image is-4by3">
+									<a id="open-modal-p1" href="">
+										<img src="assets/images/car.JPG" alt="CarHealthMonitor-Dashboardjpg">
+									</a>
+								</figure>
+							</div>
+							<div class="card-content">
+								<p class="title is-4">Car Health Monitor</p>
+								<p class="subtitle is-6">@University of British Columbia</p>
+								<p style="font-size: 13px; font-weight:  bold;">#Python, #AMQP-RabbitMQ, #GUI-tkinter, #SMTP</p>
+								<a href="docs/Car-Health-Monitor.pdf" style="font-size: 13px;">Click here to view final report</a>
+							</div>
 						</div>
 					</div>
-					<div class="column is-two-thirds ">
-						<div class="notification is-light center" style="height:100%; opacity: 0.7; border-radius: 20px;">
-							<div class="content">
-								<h2>NewPhoneWhoDis?</h2>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, ut quibusdam nemo, sunt tenetur laudantium commodi aliquam vero labore unde. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et vero illum voluptas
-								repellendus cupiditate minima voluptate reprehenderit assumenda eligendi esse. Molestias commodi quo, ex nostrum reprehenderit sed dicta rem vitae.
+					<div class="column is-one-third">
+						<div class="card">
+							<div class="card-image">
+								<figure class="image is-4by3">
+									<a id="open-modal-p2" href="">
+										<img src="assets/images/Blinds.JPG" alt="Smart Blinds Prototype">
+									</a>
+								</figure>
+							</div>
+							<div class="card-content">
+								<p class="title is-4">Smart Blinds</p>
+								<p class="subtitle is-6">@University of British Columbia</p>
+								<p style="font-size: 13px; font-weight:  bold;">#Python, #MSP430, #Alex-integration, #Stepper-motors+Light-Sensors #Raspberry Pi</p>
+								<a href="docs/Smart-Blinds.pdf" style="font-size: 13px;">Click here to view final report</a>
+							</div>
+						</div>
+					</div>
+					<div class="column is-one-third">
+						<div class="card">
+							<div class="card-image">
+								<figure class="image is-4by3">
+									<a id="open-modal-p3" href="">
+										<img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+									</a>
+								</figure>
+							</div>
+							<div class="card-content">
+								<p class="title is-4">Robocone: Autonomous Deployment</p>
+								<p class="subtitle is-6">@Univesity of Manchester</p>
 							</div>
 						</div>
 					</div>
 				</div>
-				<br>
-				<div class="columns">
-					<div class="column is-two-thirds ">
-						<div class="notification is-light center" style="height:100%; opacity: 0.7; border-radius: 20px;">
-							<div class="content">
-								<h2>NewPhoneWhoDis?</h2>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, ut quibusdam nemo, sunt tenetur laudantium commodi aliquam vero labore unde. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et vero illum voluptas
-								repellendus cupiditate minima voluptate reprehenderit assumenda eligendi esse. Molestias commodi quo, ex nostrum reprehenderit sed dicta rem vitae.
-							</div>
-						</div>
+				<div class="modal proj1">
+					<div class="modal-background"></div>
+					<div class="modal-card">
+						<header class="modal-card-head">
+							<p class="modal-card-title">Car Health Monitor</p>
+						</header>
+						<section class="modal-card-body" style="text-align: justify;">
+							<p>In this project I (in a team of four) designed a tunable car health monitoring system which notifies the user when the car needs maintenance along with the predicted maintenance cost via an email along with a a simulator of the cars sensors to present and test the application.</p>
+							<br>
+							<p>The Sub tasks included: </p>
+							<ol style="padding-left: 5%; font-size: 90%">
+								<li>Collect data about sensors values and reasons for car maintenance to decide checking the parameters and generate data to train predictive model.</li>
+								<li>Design GUI for the simulator of the car’s sensors which streams data packets of sensor information.</li>
+								<li>Setup AMQP for streaming this data.</li>
+								<li>Design a GUI that displays the sensor value in a graphical form.</li>
+								<li>Build monitoring system which decodes the packets of sensor information and checks if the car requires maintenance based on the checking parameters set by a .txt file and passes the sensor information to the predictor system.</li>
+								<li>Create a predictive model (Regression model) that uses multiple features such as the cars make, the cars model and the sensors output (that is received from the monitoring system) to estimate the maintenance cost.</li>
+								<li>Create a Notification layer that uses Google Mail API to extract all the previously collect information and notify the user via email.</li>
+							</ol>
+							<br>
+							<p>Final say:</p>
+							<p style="padding-left: 2.5%; font-size: 90%">This project was completed succesfully under the supervision of Christoph Sielmann. It was awarded a grade of 83/100</p>
+							<br>
+						</section>
 					</div>
-					<div class="column is-one-third">
-						<div style="height: 250px; overflow: hidden; border-radius: 15px;">
-							<figure class="image">
-								<img src="/assets/images/about-me.jpg">
-							</figure>
-						</div>
+				</div>
+				<div class="modal proj2">
+					<div class="modal-background"></div>
+					<div class="modal-card">
+						<header class="modal-card-head">
+							<p class="modal-card-title">Smart Blinds</p>
+						</header>
+						<section class="modal-card-body" style="text-align: justify;">
+							<p>
+								Having the blinds cover the windows at night can save a lot of heat while having them open during the day while the sun is bright, can allow your house to be naturally	heated. Also, the blinds being closed during the day or open at night can also be a good indication to burglars that you are away from your house.
+							</p>
+							<br>
+							<p>
+								To tackle these simple problems, me and my friend proposed and built a smart blind system which would keep the heat inside the house and lower the chances of a robbery, We also decided to add an Alexa integrated voice activation system  which would turn a simple blind into a smart home system appliance that can be operated from anywhere in the house.
+							</p>
+							<br>
+							<p>
+								This was done with the help of an MSP430 board which controls a stepper motor that would move the rollers up or down automatically by using Alexa voice commands and also sample the light sensor (photoresistor) to incorporate a day-night mode where the roller shade moves up or down depending on the ambient light level, and finally a Raspberry Pi board, which is used to receive voice commands via a microphone.
+							</p>
+							<br>
+							<p>Final say:</p>
+							<p>
+								This project seemed direct and easy as first, however me and my peer struggled incorporating a motor strong enough, but had low power-consumption and heat dissipation, however we managed to pull it together and the project was completed successfully.
+							</p>
+							<br>
+						</section>
+					</div>
+				</div>
+				<div class="modal proj3">
+					<div class="modal-background"></div>
+					<div class="modal-card">
+						<header class="modal-card-head">
+							<p class="modal-card-title">Final Year Project (UoM): <br>Swarming behaviour in the Robocone ecosystem</p>
+						</header>
+						<section class="modal-card-body">
+							<ul>
+								<li>
+									- The Robocone ecosystem is an ongoing project that focuses on building an autonomous robotic traffic cone system to reduce the number of accidents while also reducing the number of resources required. My task was to implement swarming behaviour in the deployment task with most accuracy.
+								</li>
+								<br>
+								<li>
+									- In this particular project I dealt with creating a deployment system for the existing nodes of the Robocone Project. This involved conducting simulations in MATLAB and testing the designed algorithms on the University of Manchester’s own MONA robots that were coded in Arduino.
+								</li>
+								<br>
+								<li>
+									- The end result was a group of robots that were able to navigate a mission and cone off a pre-determined area via software.
+								</li>
+							</ul>
+						</section>
 					</div>
 				</div>
 			</div>
@@ -494,7 +591,6 @@
 				</div>
 			</div>
 		</section>
-		
 		<section class="section has-backgroud-black" id="sec_say_hi">
 			<div class="container" style="padding: 7% 5%; opacity: 0.8;">
 				<div class="content">
