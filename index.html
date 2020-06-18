@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="assets/styles/grid.css">
 		<!-- #### -->
 		<!-- #### -->
-		<!-- <link rel="stylesheet" href="assets/styles/debug.css"> -->
+		<link rel="stylesheet" href="assets/styles/debug.css">
 		<!-- #### -->
 		<!-- #### -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
@@ -124,14 +124,34 @@
 				text-align: justify;
 				text-transform:
 			}
-			.card {
-				height: 450px;
+			.proj-container .card {
+				height: 500px;
+				position: relative;
+				transform-origin: center;
+				transform: perspective(800px) rotateY(10deg);
+				transition: 0.5s;
 			}
-			.card:hover {
-				transform: scale(1.1);
+			.proj-container:hover .card {
+				opacity: 0.3;
+			}
+			.proj-container .card:hover {
+				transform: perspective(800px) rotateY(0deg);
+				opacity: 1;
+			}
+			.card-content {
+				min-height: 200px;
+			}
+			.foot {
+				position: absolute; 
+                bottom: 20px; 
+			}
+			#stats:hover {
+				transform: scale(1.03);
 				transition-duration: 0.6s;
 				box-shadow: 5px 10px rgba(0,0,0,0.3);
+				opacity: 1;
 			}
+
 		</style>
 		
 	</head>
@@ -204,7 +224,7 @@
 				</div>
 				<div class="columns is-multiline">
 					<div class="column is-one-third">
-						<div class="box" style="opacity: 0.85;">
+						<div class="box" style="opacity: 0.85;"  id = "stats">
 							<article class="media">
 								<div class="media-left">
 									<figure class="image is-64x64">
@@ -234,7 +254,7 @@
 						</div>
 					</div>
 					<div class="column is-one-third" style="height: 100%;">
-						<div class="box" style="opacity: 0.85;">
+						<div class="box" style="opacity: 0.85;"  id = "stats">
 							<article class="media">
 								<div class="media-left">
 									<figure class="image is-64x64">
@@ -259,7 +279,7 @@
 						</div>
 					</div>
 					<div class="column is-one-third">
-						<div class="box" style="opacity: 0.85;">
+						<div class="box" style="opacity: 0.85;"  id = "stats">
 							<article class="media">
 								<div class="media-left">
 									<figure class="image is-64x64">
@@ -291,7 +311,7 @@
 						</div>
 					</div>
 					<div class="column is-half">
-						<div class="box" style="opacity: 0.85;">
+						<div class="box" style="opacity: 0.85;"  id = "stats">
 							<article class="media">
 								<div class="media-left">
 									<figure class="image is-64x64">
@@ -317,8 +337,8 @@
 							</article>
 						</div>
 					</div>
-					<div class="column is-half" style="opacity: 0.85;">
-						<div class="box">
+					<div class="column is-half">
+						<div class="box" style="opacity: 0.85;" id = "stats">
 							<article class="media">
 								<div class="media-left">
 									<figure class="image is-64x64">
@@ -350,7 +370,8 @@
 		</section>
 		<section class="section has-background-black" id="projects">
 			<div class="container">
-				<div class="columns is-multiline is-variable is-8">
+				<h1 class="title has-text-centered has-text-white is-size-2" style="font-family: Code">MY PROJECTS</h1>
+				<div class="columns is-multiline is-variable is-8 proj-container">
 					<div class="column is-one-third">
 						<div class="card">
 							<div class="card-image">
@@ -364,7 +385,7 @@
 								<p class="title is-4">Car Health Monitor</p>
 								<p class="subtitle is-6">@University of British Columbia</p>
 								<p style="font-size: 13px; font-weight:  bold;">#Python, #AMQP-RabbitMQ, #GUI-tkinter, #SMTP</p>
-								<a href="docs/Car-Health-Monitor.pdf" style="font-size: 13px;">Click here to view final report</a>
+								<a class = "foot" href="docs/Car-Health-Monitor.pdf" style="font-size: 13px;">Click here to view final report</a>
 							</div>
 						</div>
 					</div>
@@ -381,7 +402,7 @@
 								<p class="title is-4">Smart Blinds</p>
 								<p class="subtitle is-6">@University of British Columbia</p>
 								<p style="font-size: 13px; font-weight:  bold;">#Python, #MSP430, #Alex-integration, #Stepper-motors+Light-Sensors #Raspberry Pi</p>
-								<a href="docs/Smart-Blinds.pdf" style="font-size: 13px;">Click here to view final report</a>
+								<a class = "foot" href="docs/Smart-Blinds.pdf" style="font-size: 13px;">Click here to view final report</a>
 							</div>
 						</div>
 					</div>
@@ -398,10 +419,11 @@
 								<p class="title is-5">Robocone: Autonomous Deployment</p>
 								<p class="subtitle is-6">@Univesity of Manchester</p>
 								<p style="font-size: 13px; font-weight:  bold;">#MATLAB Simulations #Arduino #Zigbee #SwarmingBehaviour #Objectdetection</p>
-								<a href="docs/Robocone.pdf" style="font-size: 13px;">Click here to view final report</a>
+								<a class = "foot" href="docs/Robocone.pdf" style="font-size: 13px;">Click here to view final report</a>
 							</div>
 						</div>
 					</div>
+
 				</div>
 				<div class="modal proj1">
 					<div class="modal-background"></div>

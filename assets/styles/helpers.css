@@ -21,6 +21,9 @@
 	.desktop {
 		display: none;
 	}
+	.proj-container .card {
+		transform: perspective(800px) rotateY(0deg);
+	}
 }
 
 .html {
