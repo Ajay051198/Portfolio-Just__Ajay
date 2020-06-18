@@ -116,6 +116,15 @@
 				99% { background-color: transparent; }
 				100% { background-color: #ccc; }
 			}
+			.scroll {
+				animation: blink 3s infinite;
+			}
+			@keyframes blink {
+				0% { opacity: 0; }
+				50% { opacity: 1; }
+				100% { opacity: 0; }
+			}
+
 			#story {
 				color: white;
 				font-size: 1rem;
@@ -142,8 +151,8 @@
 				min-height: 200px;
 			}
 			.foot {
-				position: absolute; 
-                bottom: 20px; 
+				position: absolute;
+				bottom: 20px;
 			}
 			#stats:hover {
 				transform: scale(1.03);
@@ -151,7 +160,6 @@
 				box-shadow: 5px 10px rgba(0,0,0,0.3);
 				opacity: 1;
 			}
-
 		</style>
 		
 	</head>
@@ -163,13 +171,18 @@
 						<h1 id="name">Ajaykumar Mudaliar</h1>
 						<br>
 						<h1 class="center" id='typewriter'>I <span class="typed-text"></span><span class="cursor typing">&nbsp</span></h1>
-						
 					</div>
 				</div>
 			</div>
-			<div class="hero-foo">
-				<div class="container center" style="height: 25vh"></div>
-			</div>t
+			<div class="hero-foot" style="height: 10vh;">
+				<div class="container center">
+					<figure class="image is-32x32 scroll">
+						<img src="assets/images/scroll.png" alt="Image">
+					</figure>
+					<br>
+					<br>
+				</div>
+			</div>
 		</section>
 		<section class="section has-background-black" id='space-v2' style="padding-top: 0px;">
 			<div class="container">
@@ -423,7 +436,6 @@
 							</div>
 						</div>
 					</div>
-
 				</div>
 				<div class="modal proj1">
 					<div class="modal-background"></div>
@@ -458,7 +470,6 @@
 						<header class="modal-card-head">
 							<p class="modal-card-title">Smart Blinds</p>
 							<button class="delete close2" aria-label="close" id = "x"></button>
-
 						</header>
 						<section class="modal-card-body" style="text-align: justify;">
 							<p>
@@ -487,7 +498,6 @@
 						<header class="modal-card-head">
 							<p class="modal-card-title">Swarming behaviour in the Robocone ecosystem</p>
 							<button class="delete close3" aria-label="close" id = "x"></button>
-
 						</header>
 						<section class="modal-card-body" style="text-align: justify;">
 							<p>
