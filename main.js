@@ -48,6 +48,12 @@ document.querySelector('a#open-modal-p1').addEventListener('click', function(eve
   modal.classList.add('is-active');
   html.classList.add('is-clipped');
 
+  document.querySelector('.close1').addEventListener('click', function(event) {
+  event.preventDefault();
+  modal.classList.remove('is-active');
+  html.classList.remove('is-clipped');
+  });
+
   modal.querySelector('.modal-background').addEventListener('click', function(e) {
     e.preventDefault();
     modal.classList.remove('is-active');
@@ -55,12 +61,20 @@ document.querySelector('a#open-modal-p1').addEventListener('click', function(eve
   });
 });
 
+
+
 document.querySelector('a#open-modal-p2').addEventListener('click', function(event) {
   event.preventDefault();
   var modal = document.querySelector('.proj2');  // assuming you have only 1
   var html = document.querySelector('html');
   modal.classList.add('is-active');
   html.classList.add('is-clipped');
+
+  document.querySelector('.close2').addEventListener('click', function(event) {
+  event.preventDefault();
+  modal.classList.remove('is-active');
+  html.classList.remove('is-clipped');
+  });
 
   modal.querySelector('.modal-background').addEventListener('click', function(e) {
     e.preventDefault();
@@ -75,6 +89,12 @@ document.querySelector('a#open-modal-p3').addEventListener('click', function(eve
   var html = document.querySelector('html');
   modal.classList.add('is-active');
   html.classList.add('is-clipped');
+
+  document.querySelector('.close3').addEventListener('click', function(event) {
+  event.preventDefault();
+  modal.classList.remove('is-active');
+  html.classList.remove('is-clipped');
+  });
 
   modal.querySelector('.modal-background').addEventListener('click', function(e) {
     e.preventDefault();
