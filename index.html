@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>ALO DER!</title>
+		<title>A little about Ajaykumar</title>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
 		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 		<link rel="stylesheet" href="assets/styles/helpers.css">
@@ -501,66 +501,24 @@
 					<h1 class="center">Say Hello.</h1>
 				</div>
 				<form name="contact" method="POST" data-netlify="true">
-					<div class="field is-horizontal">
-						<div class="field-body">
-							<div class="field">
-								<p class="control is-expanded has-icons-left">
-									<input class="input" type="text" placeholder="Name">
-									<span class="icon is-small is-left">
-										<i class="fas fa-user"></i>
-									</span>
-								</p>
-							</div>
-							<div class="field">
-								<p class="control is-expanded has-icons-left has-icons-right">
-									<input class="input is-success" type="email" placeholder="Email">
-									<span class="icon is-small is-left">
-										<i class="fas fa-envelope"></i>
-									</span>
-									<span class="icon is-small is-right">
-										<i class="fas fa-check"></i>
-									</span>
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="field is-horizontal">
-						<div class="field-body">
-							<div class="field is-expanded">
-								<div class="field has-addons">
-									<div class="control">
-										<div class="select is-fullwidth">
-											<select>
-												<option>+44</option>
-												<option>+91</option>
-												<option>+1</option>
-												<option>-</option>
-											</select>
-										</div>
-									</div>
-									<div class="control is-expanded">
-										<input class="input" type="tel" placeholder="Your phone number">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="field">
-						<div class="control">
-							<textarea class="textarea" placeholder="Message" rows="8"></textarea>
-						</div>
-					</div>
-					<div class="field is-horizontal">
-						<div class="field-body">
-							<div class="field center">
-								<div class="control">
-									<button class="button is-primary" type="submit">
-									Send message
-									</button>
-								</div>
-							</div>
-						</div>
-					</div>
+					<p>
+						<label>Your Name: <input type="text" name="name" /></label>
+					</p>
+					<p>
+						<label>Your Email: <input type="email" name="email" /></label>
+					</p>
+					<p>
+						<label>Your Role: <select name="role[]" multiple>
+							<option value="leader">Leader</option>
+							<option value="follower">Follower</option>
+						</select></label>
+					</p>
+					<p>
+						<label>Message: <textarea name="message"></textarea></label>
+					</p>
+					<p>
+						<button type="submit">Send</button>
+					</p>
 				</form>
 			</div>
 		</section>
