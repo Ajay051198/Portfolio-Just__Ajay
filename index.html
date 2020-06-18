@@ -518,7 +518,7 @@
 							</div>
 							<div class="field">
 								<p class="control is-expanded has-icons-left has-icons-right">
-									<input class="input is-success" type="email" placeholder="Email">
+									<input class="input is-success" type="email" placeholder="Email" name='email'>
 									<span class="icon is-small is-left">
 										<i class="fas fa-envelope"></i>
 									</span>
@@ -530,8 +530,36 @@
 						</div>
 					</div>
 
+					<div class="field is-horizontal">
+						<div class="field-body">
+							<div class="field is-expanded">
+								<div class="field has-addons">
+									<div class="control">
+										<div class="select is-fullwidth">
+											<select>
+												<option>+44</option>
+												<option>+91</option>
+												<option>+1</option>
+												<option>-</option>
+											</select>
+										</div>
+									</div>
+									<div class="control is-expanded">
+										<input class="input" type="tel" placeholder="Your phone number" name="phone-number">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-					<p>
+					<div class="field">
+						<div class="control">
+							<textarea class="textarea" placeholder="Message" rows="8" name='message'></textarea>
+						</div>
+					</div>
+
+
+					<!-- <p>
 						<label>Your Name: <input type="text" name="dasdas" /></label>
 					</p>
 					<p>
@@ -545,10 +573,22 @@
 					</p>
 					<p>
 						<label>Message: <textarea name="message"></textarea></label>
-					</p>
-					<p>
+					</p> -->
+
+					<div class="field is-horizontal">
+						<div class="field-body">
+							<div class="field center">
+								<div class="control">
+									<button class="button is-primary" type="submit">
+									Send message
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <p>
 						<button type="submit">Send</button>
-					</p>
+					</p> -->
 				</form>
 
 
