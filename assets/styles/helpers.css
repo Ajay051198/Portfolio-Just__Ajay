@@ -29,3 +29,148 @@
 .html {
 	background: black;
 }
+
+@font-face {
+				font-family: myFirstFont;
+				src: url("assets/fonts/Swish.woff2") format("woff2");
+				font-weight: normal;
+				font-style: normal;
+			}
+			@font-face {
+				font-family: forstory;
+				src: url("assets/fonts/Chlakh.ttf") format("truetype");
+				font-weight: normal;
+				font-style: normal;
+			}
+			@font-face {
+				font-family: NIKOLETA;
+				src: url("assets/fonts/Comfortaa.ttf") format("truetype");
+				font-weight: normal;
+				font-style: normal;
+			}
+			@font-face {
+				font-family: Code;
+				src: url("assets/fonts/CODE.otf") format("opentype");
+				font-weight: normal;
+				font-style: normal;
+			}
+			@font-face {
+				font-family: Qual;
+				src: url("assets/fonts/Canterbury.ttf") format("truetype");
+				font-weight: normal;
+				font-style: normal;
+			}
+			#space {
+				background: black url("assets/images/bg.jpg") center / cover;
+				background-attachment: fixed;
+			}
+			#space-v2 {
+				background: black url("assets/images/bg.jpg") center / cover;
+				background-attachment: fixed;
+			}
+			#skill-set {
+				background: black url("assets/images/design-tools.jpg");
+				background-position: center;
+				background-attachment: fixed;
+			}
+			
+			#projects {
+				background: black url("assets/images/who_bg.jpeg") center / cover;
+				background-attachment: fixed;
+			}
+			#Qualifications {
+				background: black url("assets/images/qual.jpg") center / cover;
+				background-attachment: fixed;
+			}
+			#sec_say_hi {
+				background: black url("assets/images/mountains.jpg") center / cover;
+				background-attachment: fixed;
+			}
+			#name {
+				font-family: myFirstFont;
+				font-size: 3.5rem;
+				animation: twinkle 3s infinite;
+			}
+			@keyframes twinkle {
+				0% {opacity: 0.4}
+				10% {opacity: 0.5}
+				20% {opacity: 0.6}
+				30% {opacity: 0.7}
+				40% {opacity: 0.8}
+				50% {opacity: 0.9}
+				60% {opacity: 1}
+				70% {opacity: 0.8}
+				80% {opacity: 0.7}
+				90% {opacity: 0.6}
+				100% {opacity: 0.5}
+				
+			}
+			#typewriter {
+				font-family: Code;
+				color: white;
+				font-size: 1rem;
+				overflow: hidden;
+			}
+			.typed-text {
+				color: #ae57ff;
+				padding-left: 8px;
+			}
+			.cursor {
+				display: inline-block;
+				width: 3px;
+				background-color: #ccc;
+				animation: blink 0.7s infinite;
+			}
+			.cursor.typing {
+				animation: none;
+			}
+			@keyframes blink {
+				0% { background-color: #ccc; }
+				49% { background-color: #ccc; }
+				50% { background-color: transparent; }
+				99% { background-color: transparent; }
+				100% { background-color: #ccc; }
+			}
+			.scroll {
+				animation: blink 3s infinite;
+			}
+			@keyframes blink {
+				0% { opacity: 0; }
+				50% { opacity: 1; }
+				100% { opacity: 0; }
+			}
+			#story {
+				color: white;
+				font-size: 1rem;
+				font-family: NIKOLETA;
+				font-stretch: 4;
+				text-align: justify;
+				text-transform:
+			}
+			.proj-container .card {
+				height: 500px;
+				position: relative;
+				transform-origin: center;
+				transform: perspective(800px) rotateY(10deg);
+				transition: 0.5s;
+			}
+			.proj-container:hover .card {
+				opacity: 0.3;
+			}
+			.proj-container .card:hover {
+				transform: perspective(800px) rotateY(0deg);
+				opacity: 1;
+			}
+			.card-content {
+				min-height: 200px;
+			}
+			.foot {
+				position: absolute;
+				bottom: 20px;
+			}
+			#stats:hover {
+				transform: scale(1.03);
+				transition-duration: 0.6s;
+				box-shadow: 5px 10px rgba(0,0,0,0.3);
+				opacity: 1;
+			}
