@@ -52,6 +52,7 @@
 			#space-v2 {
 				background: black url("assets/images/bg.jpg") center / cover;
 				background-attachment: fixed;
+				padding-top: 0px;
 			}
 			#skill-set {
 				background: black url("assets/images/design-tools.jpg");
@@ -159,6 +160,21 @@
 				box-shadow: 5px 10px rgba(0,0,0,0.3);
 				opacity: 1;
 			}
+			.box {
+				opacity: .8;
+				transition: 0.7s;
+			}
+			.box:hover {
+				opacity: 1;
+			}
+			#gititem {
+				font-size: 0.9rem;
+			}
+			#soft-proj:hover {
+				transform: scale(.97);
+				transition-duration: 0.6s;
+				
+			}
 		</style>
 		
 	</head>
@@ -183,7 +199,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="section has-background-black" id='space-v2' style="padding-top: 0px;">
+		<section class="section has-background-black" id='space-v2'>
 			<div class="container">
 				<div class="context">
 					<h1 style="color: white; font-size: 3rem; font-family: forstory; padding: 1rem 0; text-align: center;" class="center">My Story so Far - "A wanna be AI engineer"</h1>
@@ -388,7 +404,7 @@
 						<div class="card">
 							<div class="card-image">
 								<figure class="image is-4by3">
-										<img src="assets/images/car.JPG" alt="CarHealthMonitor-Dashboardjpg">
+									<img src="assets/images/car.JPG" alt="CarHealthMonitor-Dashboardjpg">
 								</figure>
 							</div>
 							<div class="card-content">
@@ -405,7 +421,7 @@
 						<div class="card">
 							<div class="card-image">
 								<figure class="image is-4by3">
-										<img src="assets/images/Blinds.JPG" alt="Smart Blinds Prototype">
+									<img src="assets/images/Blinds.JPG" alt="Smart Blinds Prototype">
 								</figure>
 							</div>
 							<div class="card-content">
@@ -423,7 +439,7 @@
 						<div class="card">
 							<div class="card-image">
 								<figure class="image is-4by3">
-										<img src="assets/images/MONA.JPG" alt="Placeholder image">
+									<img src="assets/images/MONA.JPG" alt="Placeholder image">
 								</figure>
 							</div>
 							<div class="card-content">
@@ -523,15 +539,89 @@
 						</section>
 					</div>
 				</div>
+				<br>
+				<br>
+
+				<style>
+
+				</style>
+				<h1 class="title has-text-centered has-text-white is-size-2" style="font-family: Code">Some of my personal projects</h1>
+				<div class="tile is-ancestor">
+					<div class="tile is-vertical is-8">
+						<div class="tile">
+							<div class="tile is-parent is-vertical">
+								<article class="tile is-child notification is-link" id='soft-proj'>
+									<div class="content">
+										<p class="title">Web Development</p>
+										<p class="subtitle center">
+											<ul>
+												<li id = 'gititem'> Personal portfolio <div class="center" style="width: 15%; float: right"><a href="https://github.com/Ajay051198/Portfolio-Just__Ajay"><i class="fab fa-github" aria-hidden="true"></i></a></div></li>
+												<li id = 'gititem'> Universal Bookmark Manager <div class="center" style="width: 15%; float: right"><a href="https://github.com/Ajay051198/Bookmark-manager"><i class="fab fa-github" aria-hidden="true"></i></a></div></li>
+												<li id = 'gititem'> Nutrilookup <div class="center" style="width: 15%; float: right"><a href="https://github.com/Ajay051198/Nutrilookup"><i class="fab fa-github" aria-hidden="true"></i></a></div></li>
+											</ul>
+										</p>
+									</div>
+								</article>
+								<article class="tile is-child notification is-primary" id='soft-proj'>
+									<div class="content">
+									<p class="title">Data Science</p>
+									<p class="subtitle">
+										<ul>
+											<li id = 'gititem'> Restaurants in Toronto Analysis <div class="center" style="width: 15%; float: right"><a href="https://github.com/Ajay051198/Restaurants_in_toronto_analysis"><i class="fab fa-github" aria-hidden="true"></i></a></div></li>
+										</ul>
+									</p>
+									</div>
+								</article>
+							</div>
+							<div class="tile is-parent">
+								<article class="tile is-child notification is-dark" id='soft-proj'>
+									<div class="content">
+										
+										<p class="title">Deep Learning</p>
+										<p class="subtitle">
+											<p></p>
+											<ul>
+												<li id = 'gititem'> Neural style transfer - TF2 <div class="center" style="width: 15%; float: right"><a href="https://github.com/Ajay051198/Neural-Style-Transfer-TF2"><i class="fab fa-github" aria-hidden="true"></i></a></div></li>
+												<li id = 'gititem'> Facial Feature Detection <div class="center" style="width: 15%; float: right"><a href="https://github.com/Ajay051198/Facial-Feature-Detection"><i class="fab fa-github" aria-hidden="true"></i></a></div></li>
+												<li id = 'gititem'> Intel Image Classification Challenge <div class="center" style="width: 15%; float: right"><a href="https://github.com/Ajay051198/Intel_Image_Classification_98-acc"><i class="fab fa-github" aria-hidden="true"></i></a></div></li>
+												<li id = 'gititem'> NLP Text Classification <div class="center" style="width: 15%; float: right"><a href="https://github.com/Ajay051198/NLP_Text_Classification"><i class="fab fa-github" aria-hidden="true"></i></a></div></li>
+												<li id = 'gititem'> Implementation of AlexNet and VGG16 on TF2 <div class="center" style="width: 15%; float: right"><a href="https://github.com/Ajay051198/Implementation-of-AlexNet-and-VGG16"><i class="fab fa-github" aria-hidden="true"></i></a></div></li>
+											</ul>
+										</p>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+					<div class="tile is-parent">
+						<article class="tile is-child notification is-info" id='soft-proj'>
+							<div class="content">
+								<p class="title">Misc</p>
+								<p class="subtitle">
+									<p>Reinforcement learning</p>
+									<ul>
+										<li id = 'gititem'>Q Learning - OpenAI gym<div class="center" style="width: 15%; float: right"><a href="https://github.com/Ajay051198/QLearning"><i class="fab fa-github" aria-hidden="true"></i></a></div></li>
+									</ul>
+									<p>Open CV</p>
+									<ul>
+										<li id = 'gititem'> Face Recognition in python<div class="center" style="width: 15%; float: right"><a href="https://github.com/Ajay051198/Face-Recognition-in-python"><i class="fab fa-github" aria-hidden="true"></i></a></div></li>
+										<li id = 'gititem'> YOLOv3 Object Detection<div class="center" style="width: 15%; float: right"><a href="https://github.com/Ajay051198/YOLOv3_Object_Detection_OpenCV"><i class="fab fa-github" aria-hidden="true"></i></a></div></li>
+									</ul>
+								</p>
+							</div>
+						</article>
+					</div>
+				</div>
 			</div>
 		</section>
+		
 		<section class="section has-background-black" id="Qualifications" style="padding-top: 20px;">
 			<div class="container">
 				<h1 class="title has-text-centered has-text-white is-size-2" style="font-family: Qual; letter-spacing: 0.2rem;">Qualifications and Certifications</h1>
 				<div class="columns is-multiline">
 					
 					<div class="column is-half">
-						<div class="box" style="opacity: .9;">
+						<div class="box qual">
 							<article class="media">
 								<figure class="media-left">
 									<p class="image center column">
@@ -551,11 +641,11 @@
 						</div>
 					</div>
 					<div class="column is-half">
-						<div class="box" style="opacity: .9;">
+						<div class="box">
 							<article class="media">
 								<figure class="media-left">
 									<p class="image center column">
-										<img src="/assets/images/UBC.png" style="width: 150px;">
+										<img src="/assets/images/ubc.png" style="width: 150px;">
 									</p>
 								</figure>
 								<div class="media-content">
@@ -571,7 +661,7 @@
 						</div>
 					</div>
 					<div class="column is-half">
-						<div class="box" style="opacity: .9;">
+						<div class="box">
 							<article class="media">
 								<figure class="media-left">
 									<p class="image center column">
@@ -591,7 +681,7 @@
 						</div>
 					</div>
 					<div class="column is-half">
-						<div class="box" style="opacity: .9;">
+						<div class="box">
 							<article class="media">
 								<figure class="media-left">
 									<p class="image center column">
@@ -611,7 +701,7 @@
 						</div>
 					</div>
 					<div class="column is-half">
-						<div class="box" style="opacity: .9;">
+						<div class="box">
 							<article class="media">
 								<figure class="media-left">
 									<p class="image center column">
@@ -631,7 +721,7 @@
 						</div>
 					</div>
 					<div class="column is-half">
-						<div class="box" style="opacity: .9;">
+						<div class="box">
 							<article class="media">
 								<figure class="media-left">
 									<p class="image center column">
