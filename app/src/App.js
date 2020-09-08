@@ -1,16 +1,13 @@
 import React from "react";
-import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
-import Index from "./components/Index";
+import Index from "./components/Landing";
+import Sidenav from "./components/Sidenav"
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route path="/" exact>
-          <Index />
-        </Route>
-      </Switch>
-    </Router>
+    <main>
+      <Index />
+      <Sidenav />
+    </main>
   );
 }
 

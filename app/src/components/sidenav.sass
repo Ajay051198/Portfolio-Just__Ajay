@@ -1,0 +1,56 @@
+@import ./variables.sass
+
+.sidenav
+    position: fixed
+    top: 0
+    left: 0
+    height: 100vh
+    min-width: $sidenav-width
+    background: #1A1A1B
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+    .brand
+        width: 100%
+        background: black
+        .logo
+            color: $highlight
+            font-size: 2.8rem
+            padding-top: 20px
+            font-weight: 100
+            letter-spacing: -0.7rem
+            margin-left: 0.75rem
+        .name
+            color: white
+            font-size: 0.6rem
+            letter-spacing: 0.2rem
+            padding-bottom: 20px
+            margin-left: 1rem
+
+    .nav-holder
+        display: flex
+        flex-direction: column
+        align-items: center
+        img
+            display: block
+            padding: 12px
+            margin-bottom: 5px
+            cursor: pointer
+            transition: 0.2s
+            &:hover
+                transform: scale(1.4)
+                background: $highlight
+    .link-holder
+        display: flex
+        flex-direction: column
+        align-items: center
+        img
+            display: block
+            padding: 12px
+            margin-bottom: 5px
+            cursor: pointer
+            transition: 0.2s
+            &:hover
+                transform: scale(1.1)
+                background: $highlight

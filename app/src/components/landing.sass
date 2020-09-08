@@ -1,0 +1,69 @@
+@import ./variables.sass
+$font-size: 3rem
+
+@font-face
+    font-family: moon
+    src: url("../assets/fonts/landing.woff2") format("woff2")
+.index
+    display: flex
+    background: $bg
+    height: 100vh
+    width: calc(99vw - #{$sidenav-width})
+    margin-left: $sidenav-width
+    color: $accent
+
+    .intro-container
+        padding: 10% 0px
+        padding-left: 5%
+        letter-spacing: 0.5rem
+        font-size: $font-size
+        font-family: moon
+        font-family: moon
+        line-height: 120%
+        font-weight: 600
+        .pad-left
+            padding-left: calc(#{$font-size} + 8px)
+            &:nth-child(2)
+                color: $highlight
+
+    p
+        font-size: 1rem
+        color: grey
+        letter-spacing: 0.3rem
+        font-weight: 100
+        line-height: 140%
+    button
+        margin-left: calc(#{$font-size} + 10px)
+        background: none
+        border: 2px solid $highlight
+        color: $highlight
+        padding: 8px
+        font-size: 1.4rem
+        cursor: pointer
+        transition: 0.2s
+
+        &:hover
+            background: $highlight
+            color: $bg
+    .image
+        width: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 30rem
+        font-weight: 100
+        letter-spacing: -10rem
+        transform: rotate(-13deg)
+        transition: 0.4s
+        .accent
+            color: $highlight
+            font-size: 33rem
+        &:hover
+            transform: rotate(0)
+
+@media ( max-width: 786px)
+    .intro-container
+        color: white
+        font-size: calc(#{$font-size} * 0.7)
+    .image
+        display: none
