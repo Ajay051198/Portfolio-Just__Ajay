@@ -18,18 +18,43 @@ function Sidenav() {
         <div className="name">Ajay</div>
       </div>
       <div className="nav-holder">
-        <img src={Home} alt="Home" />
-        <img src={About} alt="About" />
+        <div className="nav-button">
+          <img src={Home} alt="Home" />
+          <div className="nav-text">HOME</div>
+        </div>
+
+        <div className="nav-button">
+          <img src={About} alt="About" />
+          <div className="nav-text">ABOUT</div>
+        </div>
+        <div className="nav-button">
         <img src={Skills} alt="Skills" />
+          <div className="nav-text">SKILLS</div>
+        </div>
+        <div className="nav-button">
         <img src={Projects} alt="Projects" />
+          <div className="nav-text">PROJECTS</div>
+        </div>
+        <div className="nav-button">
         <img src={Experience} alt="Experience" />
+          <div className="nav-text">EXP</div>
+        </div>
+        <div className="nav-button">
         <img src={Contact} alt="Contact" />
+          <div className="nav-text">CONTACT</div>
+        </div>
       </div>
       <div className="link-holder">
         <div className="icon">
-          <img src={Twitter} alt="Twitter" />
-          <img src={LinkedIn} alt="LinkedIn" />
-          <img src={Github} alt="Github" />
+          <a href={"https://twitter.com/Just__Ajay"}>
+            <img src={Twitter} alt="Twitter" />
+          </a>
+          <a href={"https://www.linkedin.com/in/ajaykumarmudaliar/"}>
+            <img src={LinkedIn} alt="LinkedIn" />
+          </a>
+          <a href={"https://github.com/Ajay051198"}>
+            <img src={Github} alt="Github" />
+          </a>
           <br />
         </div>
       </div>
