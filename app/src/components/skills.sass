@@ -1,0 +1,129 @@
+@import ./variables.sass
+$margin-left: 100px
+$base-color: #353535
+
+@font-face
+    font-family: moon
+    src: url("../assets/fonts/landing.woff2") format("woff2")
+@font-face
+    font-family: co
+    src: url("../assets/fonts/cursive.woff2") format("woff2")
+
+.skills
+    background: $bg
+    height: 100vh
+    width: calc(99vw - #{$sidenav-width})
+    margin-left: $sidenav-width
+    .container
+        width: 100%
+        .heading
+            font-family: moon
+            color: $accent
+            margin: 0
+            padding: 0
+            margin-left: $margin-left
+            font-size: 3rem
+            padding-top: 50px
+            &::before
+                content: '<div>'
+                font-family: "co"
+                color: white
+                font-size: 1rem
+                display: block
+                position: relative
+                top: 20px
+                left: -10px
+            &::after
+                content: '</div>'
+                font-family: "co"
+                color: white
+                font-size: 1rem
+                display: block
+                position: relative
+                top: -15px
+                left: -10px
+
+        .topics
+            display: flex
+            justify-content: center
+            flex-wrap: wrap
+            align-items: center
+            padding: 0px 50px
+            margin-top: 25px
+            .topic
+                position: relative
+                display: inline-block
+                height: 150px
+                width: 150px
+                padding: 15px
+                margin: 20px
+                display: flex
+                justify-content: center
+                align-items: center
+                text-align: center
+                border: 3px solid grey
+                color: grey
+                cursor: pointer
+                text-transform: uppercase
+                font-family: moon
+                letter-spacing: 0.2rem
+                &::before
+                    content: ''
+                    position: absolute
+                    top: 24px
+                    left: -24px
+                    width: calc(100% + 48px)
+                    height: calc(100% - 48px)
+                    background: $bg
+                    transition: 0.5s ease-in-out
+                    transform: scaleY(1)
+                &:hover::before
+                    transform: scaleY(0)
+                &::after
+                    content: ''
+                    position: absolute
+                    left: 24px
+                    top: -24px
+                    height: calc(100% + 48px)
+                    width: calc(100% - 48px)
+                    background: $bg
+                    transition: 0.5s ease-in-out
+                    transform: scaleX(1)
+                &:hover::after
+                    transform: scaleX(0)
+
+                span
+                    position: relative
+                    z-index: 3
+
+    .detail
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: 150px 50px
+        .skill
+            color: grey
+            font-size: 1rem
+            text-transform: uppercase
+            padding: 10px
+            height: 100px
+            padding: 15px
+            margin: 10px
+            animation: 0.1s ease custom-fade
+            animation-fill-mode: both
+
+            @for $i from 1 through 6
+                &:nth-child(#{$i})
+                    color: blue
+                    background: lighten($base-color, $i * 10%)
+
+            @keyframes custom-fade
+                from
+                    opacity: 0
+
+                to
+                    opacity: 1
+
+            @for $i from 1 through 10
+                &:nth-child(#{$i})
+                    animation-delay: $i * (1s / 20)

@@ -15,7 +15,7 @@ const Text = (text) => {
   );
 };
 
-function Index() {
+function Index({ sel }) {
   return (
     <main className="index">
       <div className="intro-container">
@@ -25,10 +25,12 @@ function Index() {
         <p className="pad-left">
           Deep Learning | Data Science | IoT | Web Development
         </p>
-        <br/>
+        <br />
         <button>CONTACT ME</button>
       </div>
-      <div className="image">A<span className="accent">J</span></div>
+      <div className="image">
+        A<span className="accent">J</span>
+      </div>
     </main>
   );
 }
