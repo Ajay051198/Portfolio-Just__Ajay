@@ -1,0 +1,71 @@
+@import ./variables.sass
+$margin-left: 100px
+
+@font-face
+    font-family: moon
+    src: url("../assets/fonts/landing.woff2") format("woff2")
+@font-face
+    font-family: co
+    src: url("../assets/fonts/cursive.woff2") format("woff2")
+@font-face
+    font-family: tag
+    src: url("../assets/fonts/ReenieBeanie-Regular.woff2") format("woff2")
+
+
+.experience
+    background: $bg
+    min-height: 100vh
+    margin-left: $sidenav-width
+    .container
+        width: 100%
+        .heading
+            font-family: moon
+            color: $accent
+            margin: 0
+            padding: 0
+            margin-left: $margin-left
+            font-size: 3rem
+            padding-top: 50px
+            &::before
+                content: '<div>'
+                font-family: "co"
+                color: white
+                font-size: 1rem
+                display: block
+                position: relative
+                top: 20px
+                left: -10px
+            &::after
+                content: '</div>'
+                font-family: "co"
+                color: white
+                font-size: 1rem
+                display: block
+                position: relative
+                top: -15px
+                left: -10px
+        .tagline
+            color: grey
+            margin-left: $margin-left
+            margin-bottom: 50px
+            font-size: 1.5rem
+            font-family: tag
+        .exp
+            margin-left: $margin-left
+            padding-bottom: 40px
+            .position
+                color: $highlight
+                font-size: 1.6rem
+                font-family: monospace
+            .company
+                font-size: 1rem
+                margin-left: 10px
+                color: white
+                font-family: monospace
+            .brief
+                color: grey
+                font-size: 1.2rem
+                font-family: monospace
+                margin-top: 15px
+                &::before
+                    content: " > "

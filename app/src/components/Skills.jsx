@@ -1,7 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./skills.sass";
+import Loader from "./Loader";
 
 function Skills() {
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []);
   const dict = {
     na: [],
     machinelearning: [
@@ -33,58 +40,66 @@ function Skills() {
     ],
   };
   const [skill, setSkill] = useState("na");
+  
   return (
     <main className="skills">
-      <div className="container">
-        <div className="heading">Skills</div>
-        <div className="topics">
-          <div
-            className="topic"
-            onClick={() => {
-              setSkill("machinelearning");
-            }}
-          >
-            <span>Machine Learning</span>
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <div>
+          {" "}
+          <div className="container">
+            <div className="heading">Skills</div>
+            <div className="topics">
+              <div
+                className="topic"
+                onClick={() => {
+                  setSkill("machinelearning");
+                }}
+              >
+                <span>Machine Learning</span>
+              </div>
+              <div
+                className="topic"
+                onClick={() => {
+                  setSkill("languages");
+                }}
+              >
+                <span>Languages</span>
+              </div>
+              <div
+                className="topic"
+                onClick={() => {
+                  setSkill("webdevelopment");
+                }}
+              >
+                <span>Web Development</span>
+              </div>
+              <div
+                className="topic"
+                onClick={() => {
+                  setSkill("datascience");
+                }}
+              >
+                <span>Data Science</span>
+              </div>
+              <div
+                className="topic"
+                onClick={() => {
+                  setSkill("software");
+                }}
+              >
+                <span>Software / Technologies</span>
+              </div>
+            </div>
           </div>
-          <div
-            className="topic"
-            onClick={() => {
-              setSkill("languages");
-            }}
-          >
-            <span>Languages</span>
-          </div>
-          <div
-            className="topic"
-            onClick={() => {
-              setSkill("webdevelopment");
-            }}
-          >
-            <span>Web Development</span>
-          </div>
-          <div
-            className="topic"
-            onClick={() => {
-              setSkill("datascience");
-            }}
-          >
-            <span>Data Science</span>
-          </div>
-          <div
-            className="topic"
-            onClick={() => {
-              setSkill("software");
-            }}
-          >
-            <span>Software / Technologies</span>
+          <div className="detail">
+            {dict[skill].map((each) => (
+              <img src={each} className="skill" alt="logo" />
+            ))}
           </div>
         </div>
-      </div>
-      <div className="detail">
-        {dict[skill].map((each) => (
-          <img src={each} className="skill" alt="logo" />
-        ))}
-      </div>
+      )}
     </main>
   );
 }

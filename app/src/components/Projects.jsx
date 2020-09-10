@@ -15,7 +15,7 @@ function Projects() {
       about: "Personal Project, Aug 2020 > Present",
       desc:
         "An interactive user-based collection manager for online resources, which makes gathering, bunching and sharing of resources such as articles, podcasts, etc much easier.",
-      tools: "Django Backend,  DRF API, React Js Frontend, HTML, SASS",
+      tools: " Django Backend,  DRF API,  React Js Frontend,  HTML,  SASS",
     },
     {
       name: "Car Health Monitor, Software Design Project",
@@ -23,7 +23,7 @@ function Projects() {
 
       desc:
         "A tune-able car health monitoring system which notifies the user when the car needs maintenance along with the predicted maintenance cost via email along. This is paired with a simulator of the car’s sensors to present and test the application..",
-      tools: "Python, Tkinter GUI, AMQP (Rabbit MQ)",
+      tools: " Python,  Tkinter GUI,  AMQP (Rabbit MQ)",
     },
     {
       name: "Smart Blinds, Mechatronics Product Design",
@@ -31,15 +31,15 @@ function Projects() {
 
       desc:
         "A Smart Blind system integrated with Amazon Alexa designed to be capable of moving the roller shade up or down automatically by using Alexa voice commands or have it moved based on ambient light levels.",
-      tools: "MSP430, Raspberry Pi, Alexa API, Stepper Motors",
+      tools: " MSP430,  Raspberry Pi,  Alexa API,  Stepper Motors",
     },
     {
       name: "Swarming behavior in Robocone ecosystem, Final Year Project",
       about: "@University of Manchester, Sep 2018 > April 2019",
 
       desc:
-        "Implementation of an IoT network within a robotic traffic cone system so that the system can demonstrate swarm behaviour and will navigate its ecosystem consciously while communicating with one another",
-      tools: "Arduino, ZigBee, MATLAB Simulations, Path planning",
+        "Implementation of an IoT network within a robotic traffic cone   system so that the system can demonstrate swarm behaviour and will navigate its ecosystem consciously while communicating with one another",
+      tools: " Arduino,  ZigBee,  MATLAB Simulations,  Path planning",
     },
   ];
   return (
@@ -49,6 +49,10 @@ function Projects() {
       ) : (
         <div>
           <div className="heading">Projects Research</div>
+          <div className="tagline">
+            " A combination of course based projects and projects pursued to
+            feed my curiosity "
+          </div>
           <div className="container">
             <div className="type">~./Research</div>
             <div className="project">
