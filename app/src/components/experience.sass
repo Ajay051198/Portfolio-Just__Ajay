@@ -1,5 +1,5 @@
 @import ./variables.sass
-$margin-left: 100px
+$margin: 100px
 
 @font-face
     font-family: moon
@@ -15,6 +15,7 @@ $margin-left: 100px
 .experience
     background: $bg
     min-height: 100vh
+    padding: 0px $margin
     margin-left: $sidenav-width
     .container
         width: 100%
@@ -23,7 +24,7 @@ $margin-left: 100px
             color: $accent
             margin: 0
             padding: 0
-            margin-left: $margin-left
+            
             font-size: 3rem
             padding-top: 50px
             &::before
@@ -46,12 +47,11 @@ $margin-left: 100px
                 left: -10px
         .tagline
             color: grey
-            margin-left: $margin-left
+           
             margin-bottom: 50px
             font-size: 1.5rem
             font-family: tag
         .exp
-            margin-left: $margin-left
             padding-bottom: 40px
             .position
                 color: $highlight
@@ -69,3 +69,17 @@ $margin-left: 100px
                 margin-top: 15px
                 &::before
                     content: " > "
+
+
+@media ( max-width: 786px)
+    .experience
+        padding: 30px 35px
+        margin-left: 0
+        .heading
+            font-size: 1.7rem
+            &::before
+                font-size: 0.7rem
+                top: 15px
+            &::after
+                font-size: 0.7rem
+                top: -10px

@@ -1,5 +1,5 @@
 @import ./variables.sass
-$margin-left: 100px
+$margin: 100px
 $base-color: #353535
 
 @font-face
@@ -12,6 +12,7 @@ $base-color: #353535
 .skills
     background: $bg
     min-height: 100vh
+    padding: 0px $margin
     margin-left: $sidenav-width
     .container
         width: 100%
@@ -20,7 +21,6 @@ $base-color: #353535
             color: $accent
             margin: 0
             padding: 0
-            margin-left: $margin-left
             font-size: 3rem
             padding-top: 50px
             &::before
@@ -126,3 +126,30 @@ $base-color: #353535
             @for $i from 1 through 10
                 &:nth-child(#{$i})
                     animation-delay: $i * (1s / 20)
+
+@media ( max-width: 786px)
+    .skills
+        padding: 30px 35px
+        margin-left: 0
+        .container
+            .heading
+                font-size: 1.7rem
+                &::before
+                    font-size: 0.7rem
+                    top: 15px
+                &::after
+                    font-size: 0.7rem
+                    top: -10px
+            .topics
+                padding: 0
+                .topic
+                    height: 50px
+                    width: 50px
+                    font-size: 0.4rem
+        .detail
+            flex-direction: row
+            flex-wrap: wrap
+            margin: 10px 10px
+            .skill
+                height: auto
+                width: 100px
