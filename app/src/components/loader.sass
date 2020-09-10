@@ -1,0 +1,40 @@
+@import ./variables.sass
+.loader
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    .text
+        margin-top: 25%
+        color: $accent
+        font-size: 3rem
+        @keyframes hang
+            0%
+                transform: rotate(-13deg)
+            100%
+                transform: rotate(0deg)
+
+        .image
+            font-size: 5rem
+            font-weight: 100
+            letter-spacing: -1rem
+            animation: hang
+            animation-duration: 1.5s
+            .accent
+                color: $highlight
+
+    .box
+        height: 30px
+        width: 400px
+        border-bottom: 2px solid grey
+        @keyframes animate
+            0%
+                width: 0px
+            100%
+                width: 400px
+        .percentage
+            height: 30px
+            animation: animate
+            animation-duration: 2s
+            border-bottom: 2px solid white
+            // animation-timing-function: linear

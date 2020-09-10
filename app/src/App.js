@@ -3,6 +3,7 @@ import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import Index from "./components/Landing";
 import Sidenav from "./components/Sidenav";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
         </Route>
         <Route path="/skills" exact>
           <Skills />
+        </Route>
+        <Route path="/projects" exact>
+          <Projects />
         </Route>
       </Switch>
     </Router>

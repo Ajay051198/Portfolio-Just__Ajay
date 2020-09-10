@@ -77,3 +77,27 @@
             &:hover
                 transform: scale(1.1)
                 background: $highlight
+
+@media ( max-width: 786px)
+    .sidenav
+        position: fixed
+        top: 0
+        left: 0
+        height: 80px
+        width: 100vw
+        background: #1A1A1B
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+
+        .brand
+            background: #1A1A1B
+            .logo
+                padding-top: 10px
+            .name
+                display: none
+
+        .nav-holder
+            flex-direction: row
+        .link-holder
+            display: none
