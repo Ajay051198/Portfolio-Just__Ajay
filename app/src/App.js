@@ -6,6 +6,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
+import About from "./components/About";
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
       <Switch>
         <Route path="/" exact>
           <Index />
+        </Route>
+        <Route path="/about" exact>
+          <About />
         </Route>
         <Route path="/skills" exact>
           <Skills />

@@ -13,13 +13,14 @@ function Experience() {
     {
       position: "Data Science Intern",
       company: "@ Jio, Sept 2020 > Present",
-      brief: "lorem ipsum buddy",
+      brief:
+        "Worked with the NextGenOps DS team, which provides AI solutions to decrease downtime with the help of system log data to automatically detect and provide resolutions for managing 300+ Jio applications.",
     },
     {
       position: "Cloud Resource Migration Shadow",
       company: "@ Vodafone, July 2018 > Aug 2018",
       brief:
-        "Shadowing and assisting representatives during migration of Vodafone cloud infrastructure",
+        "Shadowing and assisting representatives during migration of Vodafone cloud infrastructure.",
     },
   ];
   return (

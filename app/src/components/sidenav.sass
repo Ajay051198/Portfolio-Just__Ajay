@@ -45,9 +45,10 @@
         justify-content: center
         .nav-button
             cursor: pointer
-            img
+            svg
                 padding: 10px
                 display: block
+                color: white
                 margin-bottom: 5px
                 cursor: pointer
                 transition: 0.2s
@@ -61,14 +62,15 @@
                     font-size: 0.8rem
                     color: $accent
                     display: block
-                img
+                svg
                     display: none
 
     .link-holder
         display: flex
         flex-direction: column
         align-items: center
-        img
+        svg
+            color: white
             display: block
             padding: 12px
             margin-bottom: 5px
@@ -100,7 +102,7 @@
         .nav-holder
             flex-direction: row
             .nav-button
-                img
+                svg
                     height: 20px
                 .nav-text
                     text-align: center
@@ -110,7 +112,7 @@
                 &:hover
                     .nav-text
                         display: none
-                    img
+                    svg
                         display: block
 
         .link-holder
