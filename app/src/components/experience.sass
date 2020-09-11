@@ -2,15 +2,8 @@
 $margin: 100px
 
 @font-face
-    font-family: moon
-    src: url("../assets/fonts/landing.woff2") format("woff2")
-@font-face
-    font-family: co
-    src: url("../assets/fonts/cursive.woff2") format("woff2")
-@font-face
     font-family: tag
     src: url("../assets/fonts/ReenieBeanie-Regular.woff2") format("woff2")
-
 
 .experience
     background: $bg
@@ -24,7 +17,6 @@ $margin: 100px
             color: $accent
             margin: 0
             padding: 0
-            
             font-size: 3rem
             padding-top: 50px
             &::before
@@ -47,7 +39,7 @@ $margin: 100px
                 left: -10px
         .tagline
             color: grey
-           
+
             margin-bottom: 50px
             font-size: 1.5rem
             font-family: tag
@@ -70,16 +62,16 @@ $margin: 100px
                 &::before
                     content: " > "
 
-
 @media ( max-width: 786px)
     .experience
         padding: 30px 35px
         margin-left: 0
-        .heading
-            font-size: 1.7rem
-            &::before
-                font-size: 0.7rem
-                top: 15px
-            &::after
-                font-size: 0.7rem
-                top: -10px
+        .conatiner
+            .heading
+                font-size: 1.7rem
+                &::before
+                    font-size: 0.7rem
+                    top: 15px
+                &::after
+                    font-size: 0.7rem
+                    top: -10px
