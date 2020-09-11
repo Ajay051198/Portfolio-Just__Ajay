@@ -1,6 +1,7 @@
 import React from "react";
 import "./landing.sass";
 import { Random } from "react-animated-text";
+import { useHistory } from "react-router-dom";
 
 const Text = (text) => {
   return (
@@ -16,6 +17,7 @@ const Text = (text) => {
 };
 
 function Index({ sel }) {
+  let history = useHistory();
   return (
     <main className="index">
       <div className="intro-container">
@@ -26,7 +28,13 @@ function Index({ sel }) {
           Deep Learning | Data Science | IoT | Web Development
         </p>
         <br />
-        <button>CONTACT ME</button>
+        <button
+          onClick={() => {
+            history.push("/contact");
+          }}
+        >
+          CONTACT ME
+        </button>
       </div>
       <div className="image">
         A<span className="accent">J</span>

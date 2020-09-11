@@ -33,6 +33,12 @@ $font-size: 3.3rem
         letter-spacing: 0.2rem
         font-weight: lighter
         line-height: 140%
+    @keyframes fade-in
+        from
+            opacity: 0
+        to
+            opacity: 1
+
     button
         margin-left: calc(#{$font-size} - 3px)
         background: none
@@ -42,6 +48,10 @@ $font-size: 3.3rem
         font-size: 1rem
         cursor: pointer
         transition: 0.2s
+        animation: fade-in
+        animation-delay: 1.4s
+        animation-duration: 0.5s
+        animation-fill-mode: both
 
         &:hover
             background: $highlight
@@ -56,7 +66,7 @@ $font-size: 3.3rem
         letter-spacing: -10rem
         transform: rotate(-13deg)
         transition: 0.4s
-        color: $accent  
+        color: $accent
         -webkit-touch-callout: none
         -webkit-user-select: none
         -khtml-user-select: none

@@ -18,7 +18,12 @@ function Sidenav() {
   let history = useHistory();
   return (
     <main className="sidenav">
-      <div className="brand">
+      <div
+        onClick={() => {
+          history.push("/");
+        }}
+        className="brand"
+      >
         <div className="logo">AJ</div>
         <div className="logoshadow">AJ</div>
         <div className="name">Ajay</div>
@@ -85,7 +90,10 @@ function Sidenav() {
           <a target="_blank" href={"https://twitter.com/Just__Ajay"}>
             <Twitter className="svg" />
           </a>
-          <a target="_blank" href={"https://www.linkedin.com/in/ajaykumarmudaliar/"}>
+          <a
+            target="_blank"
+            href={"https://www.linkedin.com/in/ajaykumarmudaliar/"}
+          >
             <Linkedin className="svg" />
           </a>
           <a target="_blank" href={"https://github.com/Ajay051198"}>
