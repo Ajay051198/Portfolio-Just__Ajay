@@ -10,7 +10,7 @@ function About() {
     }, 2000);
   }, []);
   return (
-    <main className="about">
+    <main className="aboutme">
       {isLoading ? (
         <Loader />
       ) : (
