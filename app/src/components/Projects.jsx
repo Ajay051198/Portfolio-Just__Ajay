@@ -22,7 +22,7 @@ function Projects() {
       about: "@University of British Columbia, Jan 2020 > April 2020",
 
       desc:
-        "A tune-able car health monitoring system which notifies the user when the car needs maintenance along with the predicted maintenance cost via email along. This is paired with a simulator of the car’s sensors to present and test the application..",
+        "A tune-able car health monitoring system which notifies the user when the car needs maintenance along with the predicted maintenance cost via email along. This is paired with a simulator of the car’s sensors to present and test the application.",
       tools: " Python,  Tkinter GUI,  AMQP (Rabbit MQ)",
     },
     {
@@ -48,7 +48,7 @@ function Projects() {
         <Loader />
       ) : (
         <div>
-          <div className="heading">Projects Research</div>
+          <div className="heading">Projects & Research</div>
           <div className="tagline">
             " A combination of course based projects and projects pursued to
             feed my curiosity "
@@ -71,14 +71,14 @@ function Projects() {
                   Evaluation of the current state of the art of IoT architecture
                   and Deep Learning systems followed by an analysis of the use
                   of Deep Learning and IoT technologies in union to improve
-                  existing IoT architecture
+                  existing IoT architecture.
                 </li>
                 <li className="desc">
                   <strong>Implementation: </strong>
                   Demonstration of the proposed idea by using sequence analysis
                   using RNN’s on temporal time series sensor data to perform
                   human activity recognition to assist smart home system to
-                  adapt to the dynamic environment and deal with noise better
+                  adapt to the dynamic environment and deal with noise better.
                 </li>
               </ul>
             </div>

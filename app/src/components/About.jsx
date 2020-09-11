@@ -30,7 +30,7 @@ function About() {
             to fuel my creative side. Midway through my masters, fascinated by
             the value of data I decided to dive deeper into data science
             concepts and subsequently discovered machine learning and deep
-            learning, Wanting to explore further, I completed reputed courses by{" "}
+            learning. Wanting to explore further, I completed reputed courses by{" "}
             <span className="white">IBM</span> and{" "}
             <span className="white">Deeplearning.ai</span>, pursued projects and
             took up my master’s research in “deep learning in IoT systems”.
