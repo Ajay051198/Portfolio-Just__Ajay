@@ -21,7 +21,7 @@ function Index({ sel }) {
   return (
     <main className="index">
       <div className="intro-container">
-        <div>{Text('" Hi,')}</div>
+        <div>{Text('“ Hello,')}</div>
         <div className="pad-left highlight">{Text("I'm Ajay, ")}</div>
         <div className="pad-left">{Text('Developer. "')}</div>
         <p className="pad-left">
