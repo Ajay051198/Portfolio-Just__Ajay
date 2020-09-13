@@ -14,7 +14,7 @@ function Projects() {
       name: "Collection.io",
       about: "Personal Project, Aug 2020 > Present",
       desc:
-        "An interactive user-based collection manager for online resources, which makes gathering, bunching and sharing of resources such as articles, podcasts, etc much easier.",
+        "An interactive user-based collection manager for online resources which makes gathering, bunching and sharing of resources such as articles, podcasts, etc much easier.",
       tools: " Django Backend,  DRF API,  React Js Frontend,  HTML,  SASS",
     },
     {
@@ -22,7 +22,7 @@ function Projects() {
       about: "@University of British Columbia, Jan 2020 > April 2020",
 
       desc:
-        "A tune-able car health monitoring system which notifies the user when the car needs maintenance along with the predicted maintenance cost via email along. This is paired with a simulator of the car’s sensors to present and test the application.",
+        "A tune-able car health monitoring system which notifies the user when the car needs maintenance along with the predicted maintenance cost via email. This is paired with a simulator of the car’s sensors to present and test the application.",
       tools: " Python,  Tkinter GUI,  AMQP (Rabbit MQ)",
     },
     {
@@ -75,10 +75,11 @@ function Projects() {
                 </li>
                 <li className="desc">
                   <strong>Implementation: </strong>
-                  Demonstration of the proposed idea by using sequence analysis
-                  using RNN’s on temporal time series sensor data to perform
-                  human activity recognition to assist smart home system to
-                  adapt to the dynamic environment and deal with noise better.
+                  Demonstration of the proposed idea by applying sequence
+                  analysis using RNN’s on temporal time series sensor data to
+                  perform human activity recognition to assist smart home system
+                  to adapt to the dynamic environment and deal with noise
+                  better.
                 </li>
               </ul>
             </div>

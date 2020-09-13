@@ -19,7 +19,7 @@ function Contact() {
           <div className="heading">Contact Me</div>
           <div className="tagline">
             If you'd like to talk about any of our shared interests, one of my
-            projects or have an exciting new oppurchunity for me ping me on any
+            projects or have an exciting new oppurtunity for me, ping me on any
             one of these platforms!
           </div>
           <br />

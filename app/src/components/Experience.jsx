@@ -14,7 +14,7 @@ function Experience() {
       position: "Data Science Intern",
       company: "@ Jio, Sept 2020 > Present",
       brief:
-        "Worked with the NextGenOps DS team, which provides AI solutions to decrease downtime with the help of system log data to automatically detect and provide resolutions for managing 300+ Jio applications.",
+        "Worked with the NextGenOps DS team which provides AI solutions to decrease downtime with the help of system log data to automatically detect and provide resolutions for managing 300+ Jio applications.",
     },
     {
       position: "Cloud Resource Migration Shadow",
@@ -30,7 +30,7 @@ function Experience() {
       ) : (
         <div className="container">
           <div className="heading">Work Experience</div>
-          <div className="tagline">" It aint much, but its honest work "</div>
+          <div className="tagline"></div>
           {we.map(({ position, company, brief }) => (
             <div className="exp">
               <div className="position">{position}</div>
