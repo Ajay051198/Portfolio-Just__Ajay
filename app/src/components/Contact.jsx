@@ -1,7 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./contact.sass";
 import Loader from "./Loader";
-import { Twitter, Linkedin, Instagram, Mail } from "react-feather";
+import {
+  Twitter,
+  Linkedin,
+  Instagram,
+  Mail,
+  PhoneCall,
+  MessageCircle,
+} from "react-feather";
 
 function Contact() {
   const [isLoading, setIsLoading] = useState(true);
@@ -45,7 +52,15 @@ function Contact() {
             <a> > ajay.selvamk@gmail.com</a>
           </div>
           <div className="platform">
-            <Instagram className="svg" />
+            <PhoneCall className="svg" />
+            <a> > +91 87-545-44666</a>
+          </div>
+          <div className="platform">
+            <Mail className="svg" />
+            <a> > +1 236-978-0599</a>
+          </div>
+          <div className="platform">
+            <MessageCircle className="svg" />
             <a
               target="_blank"
               href="https://www.instagram.com/notyourusuallifeoperator/"
