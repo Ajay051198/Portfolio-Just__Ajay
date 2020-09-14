@@ -56,11 +56,11 @@ function Contact() {
             <a> > +91 87-545-44666</a>
           </div>
           <div className="platform">
-            <Mail className="svg" />
+            <MessageCircle className="svg" />
             <a> > +1 236-978-0599</a>
           </div>
           <div className="platform">
-            <MessageCircle className="svg" />
+            <Instagram className="svg" />
             <a
               target="_blank"
               href="https://www.instagram.com/notyourusuallifeoperator/"
