@@ -11,7 +11,7 @@ function Projects() {
   }, []);
   const projects = [
     {
-      name: "Collection.io (@collectionsio.netlify.app)",
+      name: "Collections.io (@collectionsio.netlify.app)",
       about: "Personal Project, Aug 2020 > Oct 2020",
       desc:
         "An interactive user-based collection manager for online resources which makes gathering, bunching and sharing of resources such as articles, podcasts, etc much easier.",
