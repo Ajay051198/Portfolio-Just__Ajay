@@ -11,8 +11,8 @@ function Projects() {
   }, []);
   const projects = [
     {
-      name: "Collection.io",
-      about: "Personal Project, Aug 2020 > Present",
+      name: "Collection.io (@https://collectionsio.netlify.app/",
+      about: "Personal Project, Aug 2020 > Oct 2020",
       desc:
         "An interactive user-based collection manager for online resources which makes gathering, bunching and sharing of resources such as articles, podcasts, etc much easier.",
       tools: " Django Backend,  DRF API,  React Js Frontend,  HTML,  SASS",
