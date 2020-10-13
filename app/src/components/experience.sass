@@ -43,6 +43,10 @@ $margin: 100px
             margin-bottom: 50px
             font-size: 1.5rem
             font-family: tag
+        .sub-title
+            color: white
+            font-family: moon
+            font-size: 2rem
         .exp
             padding-bottom: 40px
             .position
@@ -61,6 +65,22 @@ $margin: 100px
                 margin-top: 15px
                 &::before
                     content: " > "
+        .certs
+            padding-bottom: 20px
+            cursor: pointer
+            display: block
+            text-decoration: none
+            .cert
+                color: #ee6f57
+                font-size: 1.4rem
+                font-family: monospace
+            .org
+                font-size: 1.2rem
+                margin-left: 10px
+                color: white
+                font-family: monospace
+                &::before
+                   content: "@" 
 
 @media ( max-width: 786px)
     .experience
