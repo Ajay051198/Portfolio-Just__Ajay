@@ -26,12 +26,12 @@ function About() {
             Canada. I’m practising to be an AI developer with most of my work
             focused on machine learning, data science and IoT systems. My time
             spent not writing code is spent consuming non-fiction books,
-            podcasts (huge fan of Joe Rogan) or working out in the gym. I also
-            develop websites to fuel my creative side. Midway through my
-            masters, fascinated by the value of data I decided to dive deeper
-            into data science concepts and subsequently discovered machine
-            learning and deep learning. Wanting to explore further, I completed
-            reputed courses by <span className="white">IBM</span> and{" "}
+            podcasts or working out in the gym. I also develop websites to fuel
+            my creative side. Midway through my masters, fascinated by the value
+            of data I decided to dive deeper into data science concepts and
+            subsequently discovered machine learning and deep learning. Wanting
+            to explore further, I completed reputed courses by{" "}
+            <span className="white">IBM</span> and{" "}
             <span className="white">Deeplearning.ai</span>, pursued projects and
             took up my master’s research in “deep learning in IoT systems”.
             Alongside my research, I’m also interning as a data scientist in
