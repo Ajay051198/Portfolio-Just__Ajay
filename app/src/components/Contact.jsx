@@ -56,10 +56,6 @@ function Contact() {
             <a> > +1 672-999-1177</a>
           </div>
           <div className="platform">
-            <MessageCircle className="svg" />
-            <a> > +1 672-999-1177</a>
-          </div>
-          <div className="platform">
             <Instagram className="svg" />
             <a
               target="_blank"
