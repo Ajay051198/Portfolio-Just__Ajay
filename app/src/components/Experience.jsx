@@ -15,7 +15,7 @@ function Experience() {
       company: "@ Jio, Sept 2020 > Present",
       bullets: [
         "Working with the NextGenOps DS team to provides AI solutions to decrease downtime with the help of system log data to automatically detect and provide resolutions for managing 300+ Jio applications.",
-        "Implemtation of the LogMine 2016 paper to automate the general pattern detection process (clustering followed by pattern recogonition) in system log data and to do so efficiently and fast",
+        " Implementation of the LogMine 2016 paper to automate the general pattern detection process (clustering followed by pattern recognition) in system log data and to do so efficiently and fast",
       ],
     },
     {
