@@ -53,11 +53,11 @@ function Contact() {
           </div>
           <div className="platform">
             <PhoneCall className="svg" />
-            <a> > +91 87-545-44666</a>
+            <a> > +1 672-999-1177</a>
           </div>
           <div className="platform">
             <MessageCircle className="svg" />
-            <a> > +1 236-978-0599</a>
+            <a> > +1 672-999-1177</a>
           </div>
           <div className="platform">
             <Instagram className="svg" />
