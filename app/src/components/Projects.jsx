@@ -11,11 +11,11 @@ function Projects() {
   }, []);
   const projects = [
     {
-      name: "Collections.io (@collectionsio.netlify.app)",
-      about: "Personal Project, Jul 2020 > Oct 2020",
+      name: "FractalHub ",
+      about: "Passion Project, Jul 2020 > Present",
       desc:
-        "An interactive user-based collection manager for online resources which makes gathering, bunching and sharing of resources such as articles, podcasts, videos, links, etc much easier.",
-      tools: " Django Backend,  DRF API,  React Js Frontend,  HTML,  SASS",
+        "Leading an web and app development team of 6 to create a productivity tool box application for the public. This consists of an smart planner/task manager and an interactive user-based collection manager for online resources.",
+      tools: "Flutter, Firebase, Django Backend, DRF API, React Js Frontend, HTML, SASS",
     },
     {
       name: "Car Health Monitor, Software Design Project",
@@ -67,19 +67,16 @@ function Projects() {
 
               <ul className="details">
                 <li className="desc">
-                  <strong>Analysis: </strong>
-                  Evaluation of the current state of the art of IoT architecture
-                  and Deep Learning systems followed by an analysis of the use
-                  of Deep Learning and IoT technologies in union to improve
-                  existing IoT architecture.
+                  <strong>Analysis and Testing: </strong>
+                  Evaluation of using LSTMs networks in HAR over other machine
+                  learning techniques by testing 3 LSTM networks of increasing
+                  complexity over 2 datasets
                 </li>
                 <li className="desc">
-                  <strong>Implementation: </strong>
-                  Demonstration of the proposed idea by applying sequence
-                  analysis using RNN’s on temporal time series sensor data to
-                  perform human activity recognition to assist smart home system
-                  to adapt to the dynamic environment and deal with noise
-                  better.
+                  <strong>Design: </strong>
+                  Suggested a way to deal with edge case and proposed an
+                  architecture to implement the system in union to existing
+                  architecture for application in assisted living areas.
                 </li>
               </ul>
             </div>

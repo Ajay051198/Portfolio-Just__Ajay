@@ -40,6 +40,10 @@ function About() {
             pursue it as my career.{" "}
             <span className="white"> Graduating Dec'2020</span>, I’m looking
             forward to start my career and contribute back to the AI community.
+            <br/>
+            <br/>
+            <br/>
+            <br/>
           </div>
         </div>
       )}
